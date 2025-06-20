@@ -48,6 +48,7 @@ It is also more convenient to define aliases for the *mstm-serial.out* and *mstm
 and paste the following code at the end:
 
 > alias mstm="mstm-serial.out"
+>
 > alias mstmp="mstm-parallel.out"
 
 After restarting the terminal these changes should be permanent.
