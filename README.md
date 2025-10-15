@@ -52,3 +52,10 @@ and paste the following code at the end:
 > alias mstmp="mstm-parallel.out"
 
 After restarting the terminal these changes should be permanent.
+
+## TO DO
+
+- Streamline compilation with a Makefile.
+- Integrate the new developments from dec23, especially those concerning effective media, into the main code.
+- Automatize the creation of input files.
+- Solve the need to use the strongly discouraged `-fallow-argument-mismatch` flag when compiling with modern versions of gfortran.
