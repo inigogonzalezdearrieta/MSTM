@@ -18,8 +18,10 @@ else
 	SRC := code/mstm-intrinsics.f90 code/mpidefs-parallel.f90 code/mstm-v4.0.f90
 endif
 
-BINDIR := /usr/local/bin # Local directory of binary files (should be in $PATH).
-FFLAGS := -O2 -fallow-argument-mismatch # The second flag prevents errors.
+# Local directory of binary files (should be in $PATH).
+BINDIR := /usr/local/bin
+# The second flag prevents errors.
+FFLAGS := -O2 -fallow-argument-mismatch
 TARGET := mstm.out
 
 $(TARGET):
@@ -27,7 +29,7 @@ $(TARGET):
 
 install: $(TARGET)
 	mkdir -p $(BINDIR) # No error if the bin directory already exists.
-	cp $(TARGET) $(BINDIR)/$(TARGET)
+	sudo cp $(TARGET) $(BINDIR)/$(TARGET)
 
 clean:
 	rm -f *.mod # Delete all modules.
