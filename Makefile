@@ -35,4 +35,4 @@ clean:
 	rm -f *.mod # Delete all modules.
 
 uninstall:
-	rm -f $(BINDIR)/$(TARGET)
+	sudo rm -f $(BINDIR)/$(TARGET)
